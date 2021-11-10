@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
+import store from './store/Store';
+import {Provider} from  "react-redux";
 
-function App() {
+import User from './Acomponent/User';
+import Todo from './Acomponent/Todo';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Provider store={store}>
+      <Router>
+      <div>
+        <div className="add_button">
+          <NavLink className="navlink " to="/todo" exact>
+            <button type="button" className="btn btn-outline-success"> To-Do</button>
+          </NavLink>
+          <NavLink className="navlink " to="/user" exact>
+            <button type="button" className="btn btn-outline-success">Display User</button>
+          </NavLink>
+        </div>    
+        </div>
+      <hr />
+        <Switch>
+          <Route exact path="/todo" component={Todo} />
+          <Route exact path="/user" component={User} />
+          
+        </Switch>
+      </Router>
+      </Provider>
+    </>
+  )
 }
-
-export default App;

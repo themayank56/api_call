@@ -1,0 +1,131 @@
+
+/* todo app */
+*{
+    background: white;
+    text-align: center;
+    font-weight:900;
+    margin-top: 10px;
+    
+}
+.todo_app h1{
+    font-size: 80px;
+}
+.navlink{
+    color: yellowgreen;  
+}
+.navlink:hover{
+   color: tomato;   
+}
+.add_button button{
+    color: tomato;
+    padding-top: 0;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.add_button button:hover{
+    color: black;
+    background-color:tomato;
+    
+}
+
+.hr{
+    background: rgb(5, 240, 56);
+    border:5px solid yellowgreen
+}
+.body{
+    margin-top: 40px;
+}
+.main_div{
+    margin: auto;
+    width: 98%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+}
+.center_div{
+    margin: auto;
+    width: 60%;
+    border: 3px solid tomato;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Add_item h1{
+    overflow: hidden;
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+    border-bottom: 5px solid yellowgreen; 
+}
+/*Search box*/
+#search input {
+    width: 199px;
+    box-sizing: border-box;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: white;
+    overflow: hidden; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    height: 4rem;
+  }
+  
+  #search input:focus {
+    width: 40%;
+    border: 2px solid tomato;
+  }
+  #search i{
+      font-size: 30px;
+      border-radius: 50%;
+      margin-left: .5rem;
+      line-height: 4rem;
+      width:4rem;
+      background-color: tomato;
+      color: yellowgreen;
+      cursor: pointer;
+  }
+  #search i:hover{
+    color:tomato;
+    background: yellowgreen;
+}
+
+.list_item{
+   
+    color: tomato;
+}
+.list_item i{
+    color: yellowgreen;
+    margin-left: 20px;
+}
+.delete_item1 i{
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 2rem;
+    width:2rem;
+    border: 2px solid yellowgreen;
+    background: yellowgreen;
+    color: tomato;
+    cursor: pointer;   
+}
+
+.delete_item1 i:hover{
+    color:yellowgreen;
+    background-color: tomato;
+}
+
+
+
+#user h1{
+    color: yellowgreen;;
+}
+#user span{
+    color: tomato;
+}
+address {
+    display: block;
+    font-style: italic;
+  }
